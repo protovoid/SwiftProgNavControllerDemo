@@ -12,7 +12,7 @@ class TwoViewController: UIViewController {
 
   
   @IBAction func backButton(sender: UIButton) {
-    
+    navigationController?.popViewControllerAnimated(true)
   }
   
   

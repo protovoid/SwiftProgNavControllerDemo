@@ -12,10 +12,12 @@ class ThreeViewController: UIViewController {
 
   
   @IBAction func backButton(sender: UIButton) {
+    navigationController?.popViewControllerAnimated(true)
   }
   
   
   @IBAction func rootButton(sender: UIButton) {
+    navigationController?.popToRootViewControllerAnimated(true)
   }
   
   
