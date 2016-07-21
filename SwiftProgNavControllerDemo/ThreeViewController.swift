@@ -1,5 +1,5 @@
 //
-//  TwoViewController.swift
+//  ThreeViewController.swift
 //  SwiftProgNavControllerDemo
 //
 //  Created by Chad on 7/20/16.
@@ -8,18 +8,16 @@
 
 import UIKit
 
-class TwoViewController: UIViewController {
+class ThreeViewController: UIViewController {
 
   
   @IBAction func backButton(sender: UIButton) {
-    
   }
   
   
-  @IBAction func nextButton(sender: UIButton) {
-    let vc = ThreeViewController(nibName: "ThreeViewController", bundle: nil)
-    navigationController?.pushViewController(vc, animated: true)
+  @IBAction func rootButton(sender: UIButton) {
   }
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()

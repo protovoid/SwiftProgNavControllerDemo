@@ -30,14 +30,50 @@
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4y-0W-orB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fq-z9-HgT">
+                                <rect key="frame" x="389" y="111" width="31" height="30"/>
+                                <state key="normal" title="Four"/>
+                                <connections>
+                                    <action selector="fourButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOR-Ru-3xz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qGL-qw-bxP"/>
+                    <connections>
+                        <segue destination="KzC-IR-Qdm" kind="show" identifier="four" id="gPP-85-K60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1152" y="364"/>
+        </scene>
+        <!--Four View Controller-->
+        <scene sceneID="1Zc-xY-p5y">
+            <objects>
+                <viewController id="KzC-IR-Qdm" customClass="FourViewController" customModule="SwiftProgNavControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bI3-EC-Mr8"/>
+                        <viewControllerLayoutGuide type="bottom" id="8uY-4f-IGA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Elc-Ey-qgi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Controller Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIW-uv-du9">
+                                <rect key="frame" x="109" y="73" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tP6-Gp-Ggu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="364"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVc-yD-dQd">

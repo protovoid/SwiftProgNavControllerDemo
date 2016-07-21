@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     navigationController?.pushViewController(vc, animated: true)
   }
   
+  
+  @IBAction func fourButton(sender: UIButton) {
+    performSegueWithIdentifier("four", sender: self)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
