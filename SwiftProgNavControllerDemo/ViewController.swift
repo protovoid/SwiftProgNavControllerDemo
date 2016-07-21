@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  
+  @IBOutlet weak var fourFiveSwitch: UISwitch!
+  
   @IBAction func nextButton(sender: UIButton) {
     let vc = TwoViewController(nibName: "TwoViewController", bundle: nil)
     navigationController?.pushViewController(vc, animated: true)
@@ -17,7 +20,11 @@ class ViewController: UIViewController {
   
   
   @IBAction func fourButton(sender: UIButton) {
-    performSegueWithIdentifier("four", sender: self)
+    if fourFiveSwitch.on {
+      performSegueWithIdentifier("four", sender: self)
+    } else {
+      performSegueWithIdentifier("five", sender: self)
+    }
   }
   
   override func viewDidLoad() {

@@ -31,18 +31,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fq-z9-HgT">
-                                <rect key="frame" x="389" y="111" width="31" height="30"/>
+                                <rect key="frame" x="169" y="141" width="31" height="30"/>
                                 <state key="normal" title="Four"/>
                                 <connections>
                                     <action selector="fourButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOR-Ru-3xz"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtO-kE-A9K">
+                                <rect key="frame" x="87" y="189" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qGL-qw-bxP"/>
                     <connections>
+                        <outlet property="fourFiveSwitch" destination="XtO-kE-A9K" id="gPS-IF-4kL"/>
                         <segue destination="KzC-IR-Qdm" kind="show" identifier="four" id="gPP-85-K60"/>
+                        <segue destination="nrj-ZC-nzg" kind="show" identifier="five" id="HLU-Vq-Ekf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,6 +79,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tP6-Gp-Ggu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1814" y="364"/>
+        </scene>
+        <!--Five View Controller-->
+        <scene sceneID="0Qe-NL-jxL">
+            <objects>
+                <viewController id="nrj-ZC-nzg" customClass="FiveViewController" customModule="SwiftProgNavControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f1x-8z-OuN"/>
+                        <viewControllerLayoutGuide type="bottom" id="8sW-i3-njT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2m3-Fi-KqN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Controller Five" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6f-uU-2p5">
+                                <rect key="frame" x="41" y="95" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-gu-U4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="1110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVc-yD-dQd">
