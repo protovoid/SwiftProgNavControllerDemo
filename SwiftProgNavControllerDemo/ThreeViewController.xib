@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Controller Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmD-9T-H0b">
-                    <rect key="frame" x="-91" y="69" width="166" height="21"/>
+                    <rect key="frame" x="26" y="79" width="166" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -28,14 +28,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqm-mD-wrn">
-                    <rect key="frame" x="26" y="126" width="34" height="30"/>
+                    <rect key="frame" x="26" y="148" width="34" height="30"/>
                     <state key="normal" title="Back"/>
                     <connections>
                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="wd7-Tn-nzb"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quu-V2-hIU">
-                    <rect key="frame" x="122" y="126" width="32" height="30"/>
+                    <rect key="frame" x="28" y="206" width="32" height="30"/>
                     <state key="normal" title="Root"/>
                     <connections>
                         <action selector="rootButton:" destination="-1" eventType="touchUpInside" id="QEl-78-UiM"/>

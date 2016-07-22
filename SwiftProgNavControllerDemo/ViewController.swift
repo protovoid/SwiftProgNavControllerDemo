@@ -34,9 +34,9 @@ class ViewController: UIViewController,TwoVCDelegate {
   
   @IBAction func fourButton(sender: UIButton) {
     if fourFiveSwitch.on {
-      performSegueWithIdentifier("four", sender: self)
-    } else {
       performSegueWithIdentifier("five", sender: self)
+    } else {
+      performSegueWithIdentifier("four", sender: self)
     }
   }
   
