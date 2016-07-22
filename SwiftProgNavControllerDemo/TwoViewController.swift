@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol TwoVCDelegate {
+  func didFinishTwoVC(controller:TwoViewController)
+}
+
 class TwoViewController: UIViewController {
+  
+  var delegate:TwoVCDelegate!=nil
+  var vcCount:Int = 0
 
   
   @IBAction func backButton(sender: UIButton) {
-    navigationController?.popViewControllerAnimated(true)
+    //navigationController?.popViewControllerAnimated(true)
+    delegate.didFinishTwoVC(self)
   }
   
   
@@ -23,6 +31,7 @@ class TwoViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      print("\(vcCount) ")
 
         // Do any additional setup after loading the view.
     }

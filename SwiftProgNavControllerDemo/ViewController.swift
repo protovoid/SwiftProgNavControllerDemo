@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,TwoVCDelegate {
+  
+  var vcCount = 0
+  
+  func didFinishTwoVC(controller: TwoViewController) {
+    vcCount = controller.vcCount + 1
+    controller.navigationController?.popViewControllerAnimated(true)
+  }
   
   
   @IBOutlet weak var fourFiveSwitch: UISwitch!
   
   @IBAction func nextButton(sender: UIButton) {
     let vc = TwoViewController(nibName: "TwoViewController", bundle: nil)
+    vc.vcCount = vcCount
+    vc.delegate = self 
     navigationController?.pushViewController(vc, animated: true)
   }
   
