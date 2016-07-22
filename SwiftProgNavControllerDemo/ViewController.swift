@@ -10,7 +10,11 @@ import UIKit
 
 class ViewController: UIViewController,TwoVCDelegate {
   
-  var vcCount = 0
+  var vcCount:Int = 0 {
+    didSet {
+      navigationItem.title = "Count: \(vcCount)"
+    }
+  }
   
   func didFinishTwoVC(controller: TwoViewController) {
     vcCount = controller.vcCount + 1

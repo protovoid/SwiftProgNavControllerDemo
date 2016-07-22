@@ -31,7 +31,8 @@ class TwoViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      print("\(vcCount) ")
+      navigationItem.title = "Count: \(vcCount)"
+      //print("\(vcCount) ")
 
         // Do any additional setup after loading the view.
     }
